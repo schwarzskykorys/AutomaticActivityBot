@@ -33,7 +33,7 @@ public class Main {
 	
 	
 	public static void main(String[] args) throws LoginException{
-		jda = new JDABuilder(AccountType.BOT).setToken("").build();
+		jda = new JDABuilder(AccountType.BOT).setToken(Secrets.TokenBoi).build();
 		
 		jda.addEventListener(new GivePages());
 		jda.addEventListener(new rankCommand());
